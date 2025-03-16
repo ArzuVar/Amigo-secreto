@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnSortear").addEventListener("click", sortearAmigo);
 
+    //funcion que agrega amigos
+
+
     function agregarAmigo(nombre) {
         if (!nombre) {
             alert("Por favor, ingrese un nombre válido.");
