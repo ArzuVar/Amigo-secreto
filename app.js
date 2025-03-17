@@ -26,21 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 //funcion que actualiza la lista de amigos
     function actualizarLista() {
-        listaAmigos.innerHTML = amigos.map(amigo => `<li>${amigo}</li>`).join(""); //se recorre el arreglo de amigos y se agrega a la lista
+        listaAmigos.innerHTML = amigos.map(amigo => `<li>${amigo}</li>`).join(""); //se hace un mapeo del arreglo amigos[] y se agrega a la lista que se muestra en el html
     }
-
+//funcion que sortea un amigo
     function sortearAmigo() {
-        if (amigos.length === 0) {
-            alert("No hay amigos disponibles para sortear.");
+        if (amigos.length === 0) { //si no hay amigos en la lista
+            alert("No hay amigos disponibles para sortear."); //se muestra un mensaje de alerta
             return;
         }
 
-        const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-        resultado.innerHTML = `<li>${amigos[indiceAleatorio]}</li>`;
+        const indiceAleatorio = Math.floor(Math.random() * amigos.length); //se obtiene un indice aleatorio
+        resultado.innerHTML = `<li>${amigos[indiceAleatorio]}</li>`; //se muestra el amigo sorteado
     }
-
+//funcion que limpia el input
     function limpiarInput() {
-        inputAmigo.value = "";
-        inputAmigo.focus();
+        inputAmigo.value = ""; //se limpia el input
+        inputAmigo.focus(); //se pone el foco en el input
     }
 });
