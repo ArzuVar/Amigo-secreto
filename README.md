@@ -26,9 +26,9 @@ Navegador con soporte para JavaScript.
 
 Tecnologías utilizadas:
 
-HTML: Estructura de la página.
+HTML: El codigo base de HTML fue entregado por alura, pero fue modificado en sus botones para la funcion de los eventos.
 
-CSS: (Opcional) Para mejorar el diseño.
+CSS: El repository base fue entregado por alura.
 
 JavaScript: Lógica del programa para manejar la lista y el sorteo.
 
